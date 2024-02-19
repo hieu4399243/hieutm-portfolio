@@ -1,1186 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HieuTM - Personal Portfolio</title>
 
-    <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HieuTM - Personal Portfolio</title>
+
+  <!--
     - favicon
   -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
-    />
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
 
-    <!--
+  <!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
+  <!--
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
-    <!--
+<body>
+  <!--
     - #MAIN
   -->
 
-    <main>
-      <!--
+  <main>
+    <!--
       - #SIDEBAR
     -->
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.jpg"
-              alt="Hiếu Trần"
-              width="80"
-            />
-          </figure>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Hiếu Trần" width="80" />
+        </figure>
 
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Trần Minh Hiếu</h1>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Trần Minh Hiếu</h1>
 
-            <p class="title">Full-stack developer</p>
-            <button class="title" style="margin-top: 20px;" onclick="window.open('./assets/images/CV.pdf')">Dowload CV</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+          <p class="title">Full-stack developer</p>
+          <button class="title" style="margin-top: 20px;" onclick="window.open('./assets/images/CV.pdf')">Dowload CV</p>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
 
-                <a href="mailto:hieu243910@gmail.com" class="contact-link"
-                  >Hieu243910@gmail.com</a
-                >
-              </div>
-            </li>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
+              <a href="mailto:hieu243910@gmail.com" class="contact-link">Hieu243910@gmail.com</a>
+            </div>
+          </li>
 
-                <a href="tel:0962043769" class="contact-link">0962043769</a>
-              </div>
-            </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
 
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
+              <a href="tel:0962043769" class="contact-link">0962043769</a>
+            </div>
+          </li>
 
-                <time datetime="2001-03-24">March 24, 2001</time>
-              </div>
-            </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
 
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
+              <time datetime="2001-03-24">March 24, 2001</time>
+            </div>
+          </li>
 
-                <address>Bắc Từ Liêm, Hà Nội, Việt Nam</address>
-              </div>
-            </li>
-          </ul>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
 
-          <div class="separator"></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
 
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.facebook.com/profile.php?id=100077935690670"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+              <address>Bắc Từ Liêm, Hà Nội, Việt Nam</address>
+            </div>
+          </li>
+        </ul>
 
-            <li class="social-item">
-              <a href="https://github.com/hieu4399243" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
+        <div class="separator"></div>
 
-            <li class="social-item">
-              <a
-                href="https://www.instagram.com/hiuhiu_243/"
-                class="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100077935690670" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-      <!--
+          <li class="social-item">
+            <a href="https://github.com/hieu4399243" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/hiuhiu_243/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
       - #main-content
     -->
 
-      <div class="main-content">
-        <!--
+    <div class="main-content">
+      <!--
         - #NAVBAR
       -->
 
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Achievements</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
 
-        <!--
+      <!--
         - #ABOUT
       -->
 
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
 
-          <section class="about-text">
-            <p>
-              I like doing cool things by myself, like learning new languages
-              and doing them blindly. 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple">
-                  Java, PHP and .Net, ReactJS, React Native, Typescript,
-                  Javascript.
-                </b>
-              </i>
-              <br />
-              <br />
-              In addition, being exposed to many new languages makes me feel
-              very interested. Switf, Koltin, Go, or system building such as
-              deploying <b>Depops on CI/CD, Jenkins, ArgoCD, Kunbernest.</b>
-            </p>
-          </section>
+        <section class="about-text">
+          <p>
+            I like doing cool things by myself, like learning new languages
+            and doing them blindly. 🤷‍♂️
+            <br />
+            <br />I am fluent in classics like
+            <i>
+              <b className="purple">
+                Java, PHP and .Net, ReactJS, React Native, Typescript,
+                Javascript.
+              </b>
+            </i>
+            <br />
+            <br />
+            In addition, being exposed to many new languages makes me feel
+            very interested. Switf, Koltin, Go, or system building such as
+            deploying <b>Depops on CI/CD, Jenkins, ArgoCD, Kunbernest.</b>
+          </p>
+        </section>
 
-          <!--
+        <!--
           - service
         -->
 
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
 
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40" />
+              </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
 
-                  <p class="service-item-text">
-                    Perform web design on Figma or use available websites to
-                    design.
-                  </p>
-                </div>
-              </li>
+                <p class="service-item-text">
+                  Perform web design on Figma or use available websites to
+                  design.
+                </p>
+              </div>
+            </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
 
-                  <p class="service-item-text">
-                    With years of experience in developing websites both
-                    Back-end and Front-end with websites such as sales,
-                    scheduling, management,....
-                  </p>
-                </div>
-              </li>
+                <p class="service-item-text">
+                  With years of experience in developing websites both
+                  Back-end and Front-end with websites such as sales,
+                  scheduling, management,....
+                </p>
+              </div>
+            </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+              </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
 
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
-                </div>
-              </li>
+                <p class="service-item-text">
+                  Professional development of applications for iOS and
+                  Android.
+                </p>
+              </div>
+            </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-quote.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="camera icon" width="40" />
+              </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Tester</h4>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tester</h4>
 
-                  <p class="service-item-text">
-                    Knowledge of software testing, performing manual testing and
-                    a little knowledge of automation testing such as using
-                    testing libraries like Jest.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
+                <p class="service-item-text">
+                  Knowledge of software testing, performing manual testing and
+                  a little knowledge of automation testing such as using
+                  testing libraries like Jest.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-          <!--
+        <!--
           - testimonials
         -->
 
-          <section class="testimonials">
-            <h3 class="h3 testimonials-title">Languages</h3>
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Languages</h3>
 
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-1.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
+                </figure>
 
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    English
-                  </h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  English
+                </h4>
 
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Although not good or have not yet achieved IELTS or TOEIC
-                      certificates, I can still read and understand basic
-                      communication.
-                    </p>
-                  </div>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Although not good or have not yet achieved IELTS or TOEIC
+                    certificates, I can still read and understand basic
+                    communication.
+                  </p>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
+                </figure>
 
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Japanese
-                  </h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Japanese
+                </h4>
 
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Achieve N4 level, aiming for N2 to become a Japanese
-                      bridge engineer.
-                    </p>
-                  </div>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Achieve N4 level, aiming for N2 to become a Japanese
+                    bridge engineer.
+                  </p>
                 </div>
-              </li>
-            </ul>
-          </section>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-          <!--
+        <!--
           - testimonials modal
         -->
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
 
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
 
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="English"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="English" width="80" data-modal-img />
+              </figure>
 
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>English</h4>
+
+              <time datetime="2021-06-14">18 Feb, 2024</time>
+
+              <div data-modal-text>
+                <p>hieu243910</p>
               </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>English</h4>
-
-                <time datetime="2021-06-14">18 Feb, 2024</time>
-
-                <div data-modal-text>
-                  <p>hieu243910</p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!--
-          - clients
-        --></article>
+            </div>
+          </section>
+        </div>
 
         <!--
+          - clients
+        -->
+      </article>
+
+      <!--
         - #RESUME
       -->
 
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Hoa Nghia Primary School, Hai Phong
-                </h4>
+            <h3 class="h3">Education</h3>
+          </div>
 
-                <span>2007 — 2012</span>
-              </li>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Hoa Nghia Primary School, Hai Phong
+              </h4>
 
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Hoa Nghia secondary school
-                </h4>
+              <span>2007 — 2012</span>
+            </li>
 
-                <span>2012 — 2016</span>
-              </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Hoa Nghia secondary school
+              </h4>
 
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Mac Dinh Chi High School</h4>
+              <span>2012 — 2016</span>
+            </li>
 
-                <span>2016 — 2019</span>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">FPT university Ha Noi</h4>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Mac Dinh Chi High School</h4>
 
-                <span>2019 — 2013</span>
-              </li>
-            </ol>
-          </section>
+              <span>2016 — 2019</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">FPT university Ha Noi</h4>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
+              <span>2019 — 2013</span>
+            </li>
+          </ol>
+        </section>
 
-              <h3 class="h3">Experience</h3>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Greenify Việt Nam</h4>
+            <h3 class="h3">Experience</h3>
+          </div>
 
-                <span>06/2021 — 12/2021</span>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Greenify Việt Nam</h4>
 
-                <p class="timeline-text">
-                  Participate in system development, building interfaces for
-                  websites or apps. Push notifications, user data management,
-                  chatbox, shopping.The techniques, tools, and languages that I
-                  use during my work: HTML, CSS, JavaScript, ReactJS, React
-                  Native.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Web4s</h4>
+              <span>06/2021 — 12/2021</span>
 
-                <span>03/2022 — 12/2023</span>
+              <p class="timeline-text">
+                Participate in system development, building interfaces for
+                websites or apps. Push notifications, user data management,
+                chatbox, shopping.The techniques, tools, and languages that I
+                use during my work: HTML, CSS, JavaScript, ReactJS, React
+                Native.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Web4s</h4>
 
-                <p class="timeline-text">
-                  Take on the position of website development as well as
-                  software development for the company. Tools used are PHP,
-                  Smarty, Cake PHP, Ajax, Jquery
-                </p>
-              </li>
-            </ol>
-          </section>
+              <span>03/2022 — 12/2023</span>
 
-          <section class="skill">
-            <h3 class="h3 skills-title">About skills</h3>
+              <p class="timeline-text">
+                Take on the position of website development as well as
+                software development for the company. Tools used are PHP,
+                Smarty, Cake PHP, Ajax, Jquery
+              </p>
+            </li>
+          </ol>
+        </section>
 
-            <div class="skills-list content-card">
-              <div class="skill-image">
-                <img
-                  src="./assets/images/java.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/sp.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
+        <section class="skill">
+          <h3 class="h3 skills-title">About skills</h3>
 
-                <img
-                  src="./assets/images/php.png"
-                  alt="PHP"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/netcore.png"
-                  alt=".Net"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/native.png"
-                  alt="React Native"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/ts.png"
-                  alt="Typescript"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/redux.png"
-                  alt="Redux"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/react.png"
-                  alt="ReactJS"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/js.png"
-                  alt="Javascript"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/node.png"
-                  alt="Node JS"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/ex.png"
-                  alt="Express JS"
-                  width="80"
-                  data-testimonials-avatar
-                />
-              </div>
+          <div class="skills-list content-card">
+            <div class="skill-image">
+              <img src="./assets/images/java.png" alt="Java" width="60" data-testimonials-avatar />
+              <img src="./assets/images/sp.png" alt="Java" width="60" data-testimonials-avatar />
+
+              <img src="./assets/images/php.png" alt="PHP" width="60" data-testimonials-avatar />
+              <img src="./assets/images/netcore.png" alt=".Net" width="60" data-testimonials-avatar />
+              <img src="./assets/images/native.png" alt="React Native" width="60" data-testimonials-avatar />
+              <img src="./assets/images/ts.png" alt="Typescript" width="60" data-testimonials-avatar />
+              <img src="./assets/images/redux.png" alt="Redux" width="60" data-testimonials-avatar />
+              <img src="./assets/images/react.png" alt="ReactJS" width="60" data-testimonials-avatar />
+              <img src="./assets/images/js.png" alt="Javascript" width="60" data-testimonials-avatar />
+              <img src="./assets/images/node.png" alt="Node JS" width="60" data-testimonials-avatar />
+              <img src="./assets/images/ex.png" alt="Express JS" width="80" data-testimonials-avatar />
             </div>
-          </section>
-          <section class="skill" style="margin-top: 20px">
-            <h3 class="h3 skills-title">About tools</h3>
+          </div>
+        </section>
+        <section class="skill" style="margin-top: 20px">
+          <h3 class="h3 skills-title">About tools</h3>
 
-            <div class="skills-list content-card">
-              <div class="skill-image">
-                <img
-                  src="./assets/images/vs.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/vst.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
+          <div class="skills-list content-card">
+            <div class="skill-image">
+              <img src="./assets/images/vs.png" alt="Java" width="60" data-testimonials-avatar />
+              <img src="./assets/images/vst.png" alt="Java" width="60" data-testimonials-avatar />
 
-                <img
-                  src="./assets/images/ij.png"
-                  alt="PHP"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/slack.png"
-                  alt=".Net"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/jira.png"
-                  alt="React Native"
-                  width="50"
-                  height="30px"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/mysql.png"
-                  alt="React Native"
-                  width="50"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/sql.png"
-                  alt="React Native"
-                  width="50"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/mongo.png"
-                  alt="React Native"
-                  width="50"
-                  data-testimonials-avatar
-                />
-              </div>
+              <img src="./assets/images/ij.png" alt="PHP" width="60" data-testimonials-avatar />
+              <img src="./assets/images/slack.png" alt=".Net" width="60" data-testimonials-avatar />
+              <img src="./assets/images/jira.png" alt="React Native" width="50" height="30px"
+                data-testimonials-avatar />
+              <img src="./assets/images/mysql.png" alt="React Native" width="50" data-testimonials-avatar />
+              <img src="./assets/images/sql.png" alt="React Native" width="50" data-testimonials-avatar />
+              <img src="./assets/images/mongo.png" alt="React Native" width="50" data-testimonials-avatar />
             </div>
-          </section>
-          <section class="skill" style="margin-top: 20px">
-            <h3 class="h3 skills-title">About Devops</h3>
+          </div>
+        </section>
+        <section class="skill" style="margin-top: 20px">
+          <h3 class="h3 skills-title">About Devops</h3>
 
-            <div class="skills-list content-card">
-              <div class="skill-image">
-                <img
-                  src="./assets/images/jenkins.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
-                <img
-                  src="./assets/images/elas.png"
-                  alt="Java"
-                  width="60"
-                  data-testimonials-avatar
-                />
+          <div class="skills-list content-card">
+            <div class="skill-image">
+              <img src="./assets/images/jenkins.png" alt="Java" width="60" data-testimonials-avatar />
+              <img src="./assets/images/elas.png" alt="Java" width="60" data-testimonials-avatar />
 
-                <img
-                  src="./assets/images/argo.png"
-                  alt="PHP"
-                  width="60"
-                  data-testimonials-avatar
-                />
-              </div>
+              <img src="./assets/images/argo.png" alt="PHP" width="60" data-testimonials-avatar />
             </div>
-          </section>
-        </article>
+          </div>
+        </section>
+      </article>
 
-        <!--
+      <!--
         - #PORTFOLIO
       -->
 
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Testing</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
               </li>
 
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
               </li>
 
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
               </li>
-              <li class="filter-item">
-                <button data-filter-btn>Testing</button>
+              <li class="select-item">
+                <button data-select-item>Testing</button>
               </li>
             </ul>
+          </div>
 
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://toan-cham-restaurant-azure.vercel.app/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
+                  <img src="./assets/images/blog.png" alt="finance" loading="lazy" />
+                </figure>
 
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
+                <h3 class="project-title">Toan Cham Restaurant</h3>
 
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
+                <p class="project-category">Create a beautiful and user-friendly website for a restaurant, where
+                  customers can view the
+                  menu, choose dishes, choose the menus they want to order and then contact the restaurant via
+                  zalo or phone number. phone. The product uses technologies such as HTML, CSS, JavaScript.</p>
+              </a>
+            </li>
 
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Testing</button>
-                </li>
-              </ul>
-            </div>
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/hieu4399243/hieu4399243.github.io.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://toan-cham-restaurant-azure.vercel.app/">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                  <img src="./assets/images/codeEditor.png" alt="orizon" loading="lazy" />
+                </figure>
 
-                    <img
-                      src="./assets/images/blog.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+                <h3 class="project-title">Portfolio-HieuTM</h3>
 
-                  <h3 class="project-title">Toan Cham Restaurant</h3>
+                <p class="project-category">Create a website that provides personal information about achievements,
+                  education, and work. The website uses technologies such as ReactJS, Javascript, or support libraries.
+                </p>
+              </a>
+            </li>
 
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/fptupay/mobile-app">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://github.com/hieu4399243/hieu4399243.github.io.git"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                  <img src="./assets/images/chatify.png" alt="fptupay" loading="lazy" height="50%" />
+                </figure>
 
-                    <img
-                      src="./assets/images/codeEditor.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
+                <h3 class="project-title">FPTU-Pay</h3>
 
-                  <h3 class="project-title">Portfolio-HieuTM</h3>
+                <p class="project-category">FPTUPay is an e-wallet project aimed at enhancing services for students at
+                  FPT University
+                  campuses. The project offers fast and convenient money transfer, deposit, withdrawal, and
+                  school fee payment services. It addresses the issue of withdrawing money from FAP to the
+                  wallet, allowing the school’s bonuses for students to be directly transferred to the wallet
+                  without the need for application or waiting. The project employs microservices and utilizes
+                  Java for backend development and JavaScript for mobile and frontend development. The
+                  environment is run on Kubernetes (k8s) and includes built-in tools such as Rancher, ELK,
+                  Grafana, Longhorn, Kafka, Jenkins, Sonarqube, Argo-cd, Minio, Harbor (Registry), and
+                  Debezium to support operations. FPTUPay is poised to provide superior student services and is
+                  the first university in Vietnam to have its own e-wallet.</p>
+              </a>
+            </li>
 
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/hieu4399243/Pizza.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://github.com/fptupay/mobile-app">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                  <img src="./assets/images/emotion.png" alt="brawlhalla" loading="lazy" />
+                </figure>
 
-                    <img
-                      src="./assets/images/chatify.png"
-                      alt="fptupay"
-                      loading="lazy"
-                      height="50%"
-                    />
-                  </figure>
+                <h3 class="project-title">Pizza Orders</h3>
 
-                  <h3 class="project-title">FPTU-Pay</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
 
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/hieu4399243/SpotifyVersion2.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://github.com/hieu4399243/Pizza.git">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                  <img src="./assets/images/leaf.png" alt="dsm." loading="lazy" />
+                </figure>
 
-                    <img
-                      src="./assets/images/emotion.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
+                <h3 class="project-title">Spotify app</h3>
 
-                  <h3 class="project-title">Pizza Orders</h3>
+                <p class="project-category">The app is adapted from the Spotify app, using StepZen to call the API via
+                  GraphQL</p>
+              </a>
+            </li>
 
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/hieu4399243/Dating-app.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://github.com/hieu4399243/SpotifyVersion2.git">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                  <img src="./assets/images/suicide.png" alt="metaspark" loading="lazy" />
+                </figure>
 
-                    <img
-                      src="./assets/images/leaf.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
+                <h3 class="project-title">Dating app</h3>
 
-                  <h3 class="project-title">Spotify app</h3>
+                <p class="project-category">The application is created to find suitable subjects for you, based on
+                  logging in,
+                  authenticating users through registered email, searching for users through information and
+                  corresponding indicators. The application is written in React Native, data is saved on
+                  MoongoDB.</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="testing">
+              <a href="https://docs.google.com/spreadsheets/d/1YcjkcuLPeFDk00oH5YgjMFidMFCrnY4h/edit#gid=153649610">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
+                  <img src="./assets/images/st.png" alt="metaspark" loading="lazy" />
+                </figure>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://github.com/hieu4399243/Dating-app.git">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                <h3 class="project-title">System testing</h3>
 
-                    <img
-                      src="./assets/images/suicide.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
+                <p class="project-category">Testing</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="testing">
+              <a href="https://docs.google.com/spreadsheets/d/1GeU5eWe8N1lcWVoBpbezfgzVJKNQyCWH/edit#gid=1287176897">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-                  <h3 class="project-title">Dating app</h3>
+                  <img src="./assets/images/ut.png" alt="metaspark" loading="lazy" />
+                </figure>
 
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="testing"
-              >
-                <a href="https://docs.google.com/spreadsheets/d/1YcjkcuLPeFDk00oH5YgjMFidMFCrnY4h/edit#gid=153649610">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                <h3 class="project-title">Unit testing</h3>
 
-                    <img
-                      src="./assets/images/st.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
+                <p class="project-category">Testing</p>
+              </a>
+            </li>
 
-                  <h3 class="project-title">System testing</h3>
+          </ul>
+        </section>
+      </article>
 
-                  <p class="project-category">Testing</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="testing"
-              >
-                <a href="https://docs.google.com/spreadsheets/d/1GeU5eWe8N1lcWVoBpbezfgzVJKNQyCWH/edit#gid=1287176897">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/ut.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Unit testing</h3>
-
-                  <p class="project-category">Testing</p>
-                </a>
-              </li>
-              
-            </ul>
-          </section>
-        </article>
-
-        <!--
+      <!--
         - #BLOG
       -->
 
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
+      <article class="achievements" data-page="achievements">
+        <header>
+          <h2 class="h2 article-title">Achievements</h2>
+        </header>
 
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-1.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XRY27Q8SWA3J">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/1.png" alt="User Experience Research and Design" loading="lazy" />
+                </figure>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                      <span class="dot"></span>
+                    <span class="dot"></span>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Design conferences in 2022
-                    </h3>
-
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p>
+                    <time datetime="2023-07-06">June 7, 2023</time>
                   </div>
-                </a>
-              </li>
 
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-2.jpg"
-                      alt="Best fonts every designer"
-                      loading="lazy"
-                    />
-                  </figure>
+                  <h3 class="h3 blog-item-title">
+                    User Experience Research and Design
+                  </h3>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                  <p class="blog-text">
+                    Integrate UX Research and UX Design to create great products
+                    through understanding user needs, rapidly generating prototypes,
+                    and evaluating design concepts.Learners will gain hands-on
+                    experience with taking a product from initial concept, through user
+                    research, ideation and refinement, formal analysis, prototyping, and
+                    user testing, applying perspectives and methods to ensure a great
+                    user experience at every step.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-                      <span class="dot"></span>
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/P2MXDG5QM6XK">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/2.png" alt="Software Development Lifecycle" loading="lazy" />
+                </figure>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                    <h3 class="h3 blog-item-title">
-                      Best fonts every designer
-                    </h3>
+                    <span class="dot"></span>
 
-                    <p class="blog-text">
-                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
-                      est eligendi.
-                    </p>
+                    <time datetime="2022-01-12">January 12, 2022</time>
                   </div>
-                </a>
-              </li>
 
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-3.jpg"
-                      alt="Design digest #80"
-                      loading="lazy"
-                    />
-                  </figure>
+                  <h3 class="h3 blog-item-title">
+                    Software Development Lifecycle
+                  </h3>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                  <p class="blog-text">
+                    The Software Development Lifecycle Specialization covers the process
+                    and practices used for software development.
+                    Compare and contrast software development methodologies with
+                    respect to environmental, organizational, and product constraints..
+                  </p>
+                </div>
+              </a>
+            </li>
 
-                      <span class="dot"></span>
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/54EDPCSKFMJ5">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/3.png" alt="Design digest #80" loading="lazy" />
+                </figure>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                    <span class="dot"></span>
 
-                    <p class="blog-text">
-                      Excepteur sint occaecat cupidatat no proident, quis
-                      nostrum exercitationem ullam corporis suscipit.
-                    </p>
+                    <time datetime="2022-05-23">May 23, 2022</time>
                   </div>
-                </a>
-              </li>
 
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-4.jpg"
-                      alt="UI interactions of the week"
-                      loading="lazy"
-                    />
-                  </figure>
+                  <h3 class="h3 blog-item-title">CertNexus Certified Ethical Emerging Technologist</h3>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                  <p class="blog-text">
+                    In this Specialization learners developed a cross-industry and
+                    multidisciplinary foundation in applied technology ethics. The
+                    specialization focused on the skills necessary to lead with ethical
+                    integrity in any organization focused on the development,
+                    maintenance, and governance of data-driven technologies.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-                      <span class="dot"></span>
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/RKGFRYP5TL9K">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/4.png" alt="UI interactions of the week" loading="lazy" />
+                </figure>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                    <h3 class="h3 blog-item-title">
-                      UI interactions of the week
-                    </h3>
+                    <span class="dot"></span>
 
-                    <p class="blog-text">
-                      Enim ad minim veniam, consectetur adipiscing elit, quis
-                      nostrud exercitation ullamco laboris nisi.
-                    </p>
+                    <time datetime="2021-10-11">October 11, 2021</time>
                   </div>
-                </a>
-              </li>
 
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-5.jpg"
-                      alt="The forgotten art of spacing"
-                      loading="lazy"
-                    />
-                  </figure>
+                  <h3 class="h3 blog-item-title">
+                    Web Design for Everybody: Basics of Web Development & Coding
+                  </h3>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                  <p class="blog-text">
+                    This Specialization covers how to write syntactically correct HTML5 and
+                    CSS3, and how to create interactive web experiences with JavaScript.
+                    Mastering this range of technologies will allow you to develop high
+                    quality web sites that, work seamlessly on mobile, tablet, and large
+                    screen browsers accessible.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-                      <span class="dot"></span>
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PKWP6RSGX4D3">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/5.png" alt="The forgotten art of spacing" loading="lazy" />
+                </figure>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                    <h3 class="h3 blog-item-title">
-                      The forgotten art of spacing
-                    </h3>
+                    <span class="dot"></span>
 
-                    <p class="blog-text">
-                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
-                      et dolore magna aliqua.
-                    </p>
+                    <time datetime="2023-01-13">January 13, 2023</time>
                   </div>
-                </a>
-              </li>
 
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-6.jpg"
-                      alt="Design digest #79"
-                      loading="lazy"
-                    />
-                  </figure>
+                  <h3 class="h3 blog-item-title">
+                    Academic English: Writing
+                  </h3>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+                  <p class="blog-text">
+                    Congratulations on completing all four courses and the capstone
+                    project in the Academic English: Writing specialization. This was not an
+                    easy task, and you should feel proud of your accomplishment. The
+                    skills you've learned for academic writing and research will be useful in
+                    your future academic endeavors.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-                      <span class="dot"></span>
+            <li class="blog-post-item">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JERE9YRGDE4P">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/6.png" alt="Design digest #79" loading="lazy" />
+                </figure>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
 
-                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                    <span class="dot"></span>
 
-                    <p class="blog-text">
-                      Optio cumque nihil impedit uo minus quod maxime placeat,
-                      velit esse cillum.
-                    </p>
+                    <time datetime="2022-02-23">June 5, 2021</time>
                   </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
 
-        <!--
+                  <h3 class="h3 blog-item-title">Computer Communications</h3>
+
+                  <p class="blog-text">
+                    In this Specialization, learners developed and honed essential skills in
+                    fundamental computer networking concepts and principles, apply the
+                    networking theory and design principles, verify their understandings,
+                    and build a solid foundation for creating innovations in today's
+                    Internet.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
         - #CONTACT
       -->
 
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
 
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
+          <form onsubmit="emailSend(); reset(); return false;" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
 
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input />
+            </div>
 
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
 
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
-      </div>
-    </main>
-
-    <!--
+  <!--
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <!--
+  <!--
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

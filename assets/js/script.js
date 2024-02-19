@@ -157,3 +157,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function emailSend(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "hieu243910@gmail.com",
+    Password : "DC4A12DCF71347C418C2A930EEFB04D06EF1",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}

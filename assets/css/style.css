@@ -282,6 +282,11 @@ article.active {
   cursor: pointer;
   z-index: 1;
 }
+.skill-image{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .content-card::before {
   content: "";
